@@ -390,7 +390,7 @@ export class ETrade {
 
 		this.signRequest(requestOptions);
 
-		return (await this.request<any>(requestOptions)).QuoteResponse.QuoteData[0];
+		return (await this.request<any>(requestOptions)).QuoteResponse.QuoteData;
 	}
 
 	async listAccounts(): Promise<Account[]> {
